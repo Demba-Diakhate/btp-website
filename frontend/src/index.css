@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*Section Hero_section: style background-image*/
+.back {
+  width: 100%;
+  height: 710px;
+  background-image: url('../public/img/scene-construction.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+/*Page Home Section Gallery: style splide__row  */
+.splide__arrows .splide__arrow {
+  background-color: #fcd019;
+}
+.splide__arrows .splide__arrow--prev {
+  transform: rotate(180deg);
+}
+.splide__arrows .splide__arrow--next {
+  transform: rotate(0deg);
+}
+
+/* Page Home Section Projects:  */
+.splide__arrows .projects-prev {
+  transform: rotate(180deg);
+}
+.splide__arrows .projects-next {
+  transform: rotate(0deg);
+}
+.splide__arrows .splide__arrow .react_row{
+  font-size: smaller;
+}
+
+/*Page A propos section Header  */
+.backHeader {
+  width: 100%;
+  height: 710px;
+  background-image: url('/public/img/IMG-20241130-WA0157.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* Pages contact les coordonnees de ETEP */
+
+.background-contact-1{
+  background-image: url('../public/img/img-contraste-1.jpg');
+  background-size: cover;
+  /* filter: brightness(30%); */
+}
+.background-contact-2{
+  background-image: url('../public/img/img-contraste-2.jpg');
+  background-size: cover;
+  /* filter: brightness(30%); */
+}
+.background-contact-3{
+  background-image: url('../public/img/img-contraste-3.jpg');
+  background-size: cover;
+  /* filter: brightness(70%); */
+}
+
+.image-contraste-4{
+  background-image: url('../public/img/img-contraste-4.jpg');
+  background-size: cover;
+  /* filter: brightness(70%); */
+
+}
+.image-contraste-5{
+  background-image: url('../public/img/img-contraste-4.jpg');
+  background-size: cover;
+
+  /* filter: brightness(50%); */
+
+}
+
+
+
+/* Box shadow pour les cartes dans la page service */
+.box_shadow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* un background d'image  dans la page service pour le section qui renvoie à la page de contact  */
+.bg_section_contact_service{
+  background-image: url('../public/img/scene-construction-2.jpg');
+  background-size: cover;
+}

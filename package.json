@@ -1,0 +1,18 @@
+{
+  "name": "btp_web_site",
+  "version": "1.0.0",
+  "description": "site web vitrine pour des besoins de BTP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "aos": "^2.3.4",
+    "react-icons": "^5.4.0"
+  }
+}
