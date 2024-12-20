@@ -2,11 +2,17 @@ import React from 'react'
 import './hero_section.css'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function HeroSection() {
-  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durée de l'animation
+      once: true, // Animation jouée une seule fois
+    });
+  }, []);
 
   return (
     <div className="back">
@@ -18,7 +24,7 @@ function HeroSection() {
                     <Link to="/about" className="px-6 py-3 rounded-lg bg-[#fcd019] text-white font-semibold">À propos</Link>
                 </div>
             </div>
-            <div className='w-1/2 mr-20 lg:mr-0 lg:pt-40 xl:pt-40 hidden md:block ' >
+            <div className='w-1/2 mr-20 lg:mr-0 lg:pt-40 xl:pt-40 hidden md:block ' data-aos="fade-left">
                 <img src="img/man1.png" alt="men" className='w-11/12'/>
             </div>
        </div>
